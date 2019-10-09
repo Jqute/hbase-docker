@@ -25,6 +25,9 @@ ADD ./replace-hostname /opt/replace-hostname
 
 ADD ./hbase-server /opt/hbase-server
 
+ADD ./hbase-sep-impl-1.6-SNAPSHOT.jar /opt/hbase/lib/hbase-sep-impl-1.6-SNAPSHOT.jar
+ADD ./hbase-sep-api-1.6-SNAPSHOT.jar /opt/hbase/lib/hbase-sep-api-1.6-SNAPSHOT.jar
+
 # REST API
 EXPOSE 8080
 # REST Web UI at :8085/rest.jsp

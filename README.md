@@ -38,7 +38,7 @@ Run HBase
 To run HBase by hand:
 
     $ mkdir data
-    $ id=$(docker run --name=hbase-docker -h hbase-docker -d -v $PWD/data:/data dajobe/hbase)
+    $ id=$(docker run --name=hbase-docker -h hbase-docker -d -p 16010:16010 -p 8080:8080 -p 8085:8085 -p 9090:9090 -p 9095:9095 -p 2181:2181 -v $PWD/data:/data dajobe/hbase)
 
 To run it and adjust the host system's locally by editing
 `/etc/hosts` to alias the DNS hostname 'hbase-docker' to the
